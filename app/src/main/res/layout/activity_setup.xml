@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetupActivity"
+    android:background="@color/background_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/to_do"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="15dp"
+            app:tint="@color/creative_orange"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Signup 2 of 2"
+            android:fontFamily="serif"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sign_text"
+            android:layout_marginTop="25dp"
+            android:text="Profile Info"
+            android:fontFamily="serif"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/setup_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/reactangle"
+            android:drawableLeft="@drawable/person"
+            android:drawablePadding="10dp"
+            android:hint="Full name"
+            
+            android:fontFamily="serif"
+            android:drawableTint="@color/smoky_black"
+            android:paddingLeft="10dp"
+            android:maxLines="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/setup_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/reactangle"
+            android:drawableLeft="@drawable/ic_aadhar_card"
+            android:drawableTint="@color/smoky_black"
+            android:drawablePadding="10dp"
+            android:hint="Age"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:inputType="number"
+            android:fontFamily="serif"
+            android:maxLines="1"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/setup_Gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/reg_gender"
+            android:background="@drawable/reactangle"
+            android:drawableLeft="@drawable/ic_baseline_gender"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/smoky_black"
+            android:ems="10"
+            android:fontFamily="serif"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:maxLines="1"
+            android:layout_marginTop="15dp"
+            android:hint="00 - 00 - 0000 (Click Me)"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/reactangle"
+        android:backgroundTint="@color/creative_orange"
+        android:elevation="5dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="13dp"
+        android:paddingRight="15dp"
+        android:fontFamily="serif"
+        android:paddingBottom="13dp"
+        android:text="Submit"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

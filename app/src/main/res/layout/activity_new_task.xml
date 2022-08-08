@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewTaskActivity"
+    android:background="@color/background_color">
+
+    <RelativeLayout
+        android:id="@+id/new_task_header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:elevation="5dp"
+        android:background="@color/creative_orange"
+        app:layout_constraintBaseline_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="serif"
+            android:text="Assign New Task"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/new_task_header"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="serif"
+            android:text="Select Time"
+            android:textColor="@color/creative_orange"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/new_task_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/reactangle"
+            android:fontFamily="serif"
+            android:maxLines="1"
+            android:padding="12dp"
+            android:textColor="@color/chocolate"
+            android:hint="00 : 00 AM (Click Me)"
+            android:singleLine="true"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+            android:text="Task Title"
+            android:textColor="@color/creative_orange"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/new_task_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/reactangle"
+            android:fontFamily="serif"
+            android:maxLines="1"
+            android:padding="12dp"
+            android:textColor="@color/chocolate"
+            android:hint="i.e. Go To Market"
+            android:singleLine="true"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:elevation="10dp">
+
+        <TextView
+            android:id="@+id/task_assign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/reactangle"
+            android:backgroundTint="@color/creative_yellow"
+            android:fontFamily="serif"
+            android:paddingLeft="50dp"
+            android:paddingTop="12dp"
+            android:paddingRight="50dp"
+            android:paddingBottom="12dp"
+            android:text="Assign"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/task_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/reactangle"
+            android:backgroundTint="@color/fragment_title_background"
+            android:fontFamily="serif"
+            android:paddingLeft="50dp"
+            android:paddingTop="12dp"
+            android:paddingRight="50dp"
+            android:paddingBottom="12dp"
+            android:text="Cancel"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+</RelativeLayout>

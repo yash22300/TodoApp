@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TodoActivity"
+    android:background="@color/background_color">
+
+    <RelativeLayout
+        android:id="@+id/to_do_header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/creative_orange"
+        android:elevation="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="serif"
+            android:text="My ToDo List"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/to_do_date_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="4dp"
+        android:layout_below="@+id/to_do_header">
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="serif"
+            android:textColor="@color/chocolate"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:layout_toRightOf="@+id/tvDate"
+            android:layout_alignBottom="@+id/tvDate"
+            android:translationY="-2dp"
+            android:textColor="@color/fragment_title_background"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <com.michalsvec.singlerowcalendar.calendar.SingleRowCalendar
+        android:id="@+id/main_single_row_calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/to_do_date_title"
+        android:layout_margin="20dp"
+        app:deselection="false"
+        app:longPress="false"
+        app:multiSelection="false" />
+
+    <RelativeLayout
+        android:id="@+id/to_do_header_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_single_row_calendar"
+        android:layout_marginLeft="95dp">
+
+        <View
+            android:id="@+id/view_circle"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/circular_background"
+            android:backgroundTint="@color/creative_orange" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@color/creative_orange" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/to_do_header_view">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/task_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"/>
+        <ProgressBar
+            android:id="@+id/task_list_progress"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:id="@+id/no_data_found"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/cloud"
+                android:layout_gravity="center"
+                app:tint="@color/creative_orange"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Data found!!!"
+                android:fontFamily="serif"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:textColor="@color/creative_orange"/>
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>
