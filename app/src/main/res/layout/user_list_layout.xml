@@ -23,8 +23,10 @@
             android:layout_marginRight="1dp"
             android:layout_marginLeft="10dp">
             <LinearLayout
-                android:padding="10dp"
-                android:layout_marginLeft="5dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -38,8 +40,7 @@
                         android:layout_height="wrap_content"
                         android:text="Yashpal Bharti,"
                         android:fontFamily="serif"
-                        android:textSize="16sp"
-                        android:textColor="@color/chocolate"/>
+                        android:textSize="16sp"/>
                     <TextView
                         android:id="@+id/user_list_age"
                         android:layout_width="wrap_content"
@@ -60,7 +61,7 @@
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:src="@drawable/dob"
-                        app:tint="@color/chocolate"/>
+                        app:tint="?attr/colorSecondary"/>
                     <TextView
                         android:id="@+id/user_list_dob"
                         android:layout_width="wrap_content"
@@ -69,8 +70,7 @@
                         android:fontFamily="serif"
                         android:textSize="14sp"
                         android:layout_marginLeft="10dp"
-                        android:layout_gravity="center"
-                        android:textColor="@color/chocolate"/>
+                        android:layout_gravity="center"/>
                 </LinearLayout>
             </LinearLayout>
 

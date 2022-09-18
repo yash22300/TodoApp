@@ -17,7 +17,6 @@
             android:fontFamily="serif"
             android:textSize="15sp"
             android:gravity="center"
-            android:textColor="@color/chocolate"
             android:layout_marginLeft="20dp"
             android:layout_gravity="center"/>
 
@@ -39,12 +38,13 @@
                     android:id="@+id/task_list_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Go To Market"
-                    android:fontFamily="serif"
-                    android:textSize="14sp"
-                    android:gravity="left"
                     android:layout_centerInParent="true"
-                    android:textColor="@color/white" />
+                    android:fontFamily="serif"
+                    android:gravity="left"
+                    android:text="Go To Market"
+                    android:background="@color/creative_orange"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 

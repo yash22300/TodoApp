@@ -8,83 +8,92 @@
     tools:context=".NewTaskActivity"
     android:background="@color/background_color">
 
-    <RelativeLayout
-        android:id="@+id/new_task_header"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:elevation="5dp"
-        android:background="@color/creative_orange"
-        app:layout_constraintBaseline_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="20dp"
-            android:fontFamily="serif"
-            android:text="Assign New Task"
-            android:layout_centerHorizontal="true"
-            android:textColor="@color/white"
-            android:textSize="18sp" />
-    </RelativeLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_below="@+id/new_task_header"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginTop="20dp"
-            android:fontFamily="serif"
-            android:text="Select Time"
-            android:textColor="@color/creative_orange"
-            android:textSize="14sp" />
-
-        <TextView
-            android:id="@+id/new_task_time"
+        android:layout_height="match_parent">
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/reactangle"
-            android:fontFamily="serif"
-            android:maxLines="1"
-            android:padding="12dp"
-            android:textColor="@color/chocolate"
-            android:hint="00 : 00 AM (Click Me)"
-            android:singleLine="true"
-            android:textSize="14sp" />
+            android:layout_height="match_parent">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginTop="10dp"
-            android:fontFamily="serif"
-            android:text="Task Title"
-            android:textColor="@color/creative_orange"
-            android:textSize="14sp" />
+            <RelativeLayout
+                android:id="@+id/new_task_header"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:elevation="5dp"
+                android:background="@color/creative_orange"
+                app:layout_constraintBaseline_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
 
-        <EditText
-            android:id="@+id/new_task_title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/reactangle"
-            android:fontFamily="serif"
-            android:maxLines="1"
-            android:padding="12dp"
-            android:textColor="@color/chocolate"
-            android:hint="i.e. Go To Market"
-            android:singleLine="true"
-            android:textSize="14sp" />
-    </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="serif"
+                    android:text="Assign New Task"
+                    android:textColor="@color/white"
+                    android:background="@color/creative_orange"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/new_task_header"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="serif"
+                    android:text="Select Time"
+                    android:textColor="@color/creative_orange"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/new_task_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/reactangle"
+                    android:fontFamily="serif"
+                    android:maxLines="1"
+                    android:padding="12dp"
+                    android:textColor="@color/chocolate"
+                    android:hint="00 : 00 AM (Click Me)"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="serif"
+                    android:text="Task Title"
+                    android:textColor="@color/creative_orange"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/new_task_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/reactangle"
+                    android:fontFamily="serif"
+                    android:maxLines="1"
+                    android:padding="12dp"
+                    android:textColor="@color/chocolate"
+                    android:hint="i.e. Go To Market"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
 
     <RelativeLayout
         android:layout_width="match_parent"

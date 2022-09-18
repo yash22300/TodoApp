@@ -4,13 +4,26 @@
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/creative_yellow_dark</item>
         <item name="colorPrimaryVariant">@color/creative_yellow_dark</item>
-        <item name="colorOnPrimary">@color/smoky_black</item>
+        <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/creative_yellow_dark</item>
-        <item name="colorSecondaryVariant">@color/creative_yellow_dark</item>
+        <item name="colorSecondary">@color/white</item>
+        <item name="colorSecondaryVariant">@color/creative_orange</item>
         <item name="colorOnSecondary">@color/smoky_black</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorOnPrimary</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorOnSecondary</item>
+        <item name="android:background">
+            ?attr/colorOnSecondary</item>
+        <item name="android:textColor">
+            ?attr/colorOnPrimary
+        </item>
         <!-- Customize your theme here. -->
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/creative_orange</item>
+        <item name="colorControlNormal">@color/creative_yellow_dark</item>
+        <item name="android:background">?attr/colorSecondaryVariant</item>
+        <item name="android:indeterminateTint">?attr/colorSecondaryVariant</item>
+        <item name="android:color">?attr/colorSecondaryVariant</item>
     </style>
 </resources>

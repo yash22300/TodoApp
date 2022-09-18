@@ -18,6 +18,7 @@
         android:fontFamily="serif"
         android:gravity="center"
         android:text="12"
+        android:background="@android:color/transparent"
         android:textColor="@color/chocolate"
         android:textSize="20sp" />
 
@@ -29,6 +30,7 @@
         android:fontFamily="serif"
         android:text="Fri"
         android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
         android:textColor="@color/chocolate"
         android:textSize="14sp" />
 

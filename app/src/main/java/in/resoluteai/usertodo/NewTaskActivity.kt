@@ -41,7 +41,7 @@ class NewTaskActivity : AppCompatActivity(),TimePickerDialog.OnTimeSetListener {
         time.setOnClickListener {
             getDateTimeCalendar()
 
-            TimePickerDialog(this,this,hour, minute,false ).show()
+            TimePickerDialog(this,R. style.DialogTheme,this,hour, minute,false ).show()
         }
 
 

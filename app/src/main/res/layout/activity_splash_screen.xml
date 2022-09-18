@@ -5,55 +5,58 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashScreenActivity"
-    android:background="@color/background_color">
+    tools:context=".SplashScreenActivity">
 
-    <LinearLayout
-        android:id="@+id/splash_header"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/splash_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-        <View
-            android:id="@+id/line5"
-            android:layout_width="30dp"
-            android:layout_height="200dp"
-            android:layout_marginLeft="10dp"
-            android:background="#a42474" />
+                <View
+                    android:id="@+id/line5"
+                    android:layout_width="30dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="#a42474" />
 
-        <View
-            android:id="@+id/line4"
-            android:layout_width="30dp"
-            android:layout_height="260dp"
-            android:layout_marginLeft="10dp"
-            android:background="#e74968" />
+                <View
+                    android:id="@+id/line4"
+                    android:layout_width="30dp"
+                    android:layout_height="260dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="#e74968" />
 
-        <View
-            android:id="@+id/line3"
-            android:layout_width="30dp"
-            android:layout_height="90dp"
-            android:layout_marginLeft="10dp"
-            android:background="#37aea4" />
+                <View
+                    android:id="@+id/line3"
+                    android:layout_width="30dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="#37aea4" />
 
-        <View
-            android:id="@+id/line2"
-            android:layout_width="30dp"
-            android:layout_height="160dp"
-            android:layout_marginLeft="10dp"
-            android:background="#f0802c" />
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="30dp"
+                    android:layout_height="160dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="#f0802c" />
 
-        <View
-            android:id="@+id/line1"
-            android:layout_width="30dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="10dp"
-            android:background="#1c6c8c" />
-    </LinearLayout>
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="#1c6c8c" />
+            </LinearLayout>
+    </ScrollView>
 
     <ImageView
         android:layout_width="80dp"
         android:layout_height="80dp"
+        android:layout_centerInParent="true"
         android:src="@drawable/logo"
-        android:translationY="100dp"
-        android:layout_centerInParent="true"/>
+        android:translationY="100dp" />
 
 </RelativeLayout>
